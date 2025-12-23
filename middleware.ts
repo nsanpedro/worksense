@@ -1,46 +1,37 @@
-import { NextResponse } from "next/server"
-import type { NextRequest } from "next/server"
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-// Public routes that don't require authentication
-const publicRoutes = [
-  "/survey",  // Public survey pages
-  "/api/auth/login",
-  "/api/auth/register",
-  "/api/slack/webhook",
-  "/api/slack/commands",
-  "/api/surveys/[id]/responses", // Allow anonymous survey submissions
-]
-
-// Routes that should be accessible without auth during development
-const devRoutes = ["/", "/surveys", "/insights", "/actions", "/settings"]
+// Rutas públicas que no requieren autenticación
+const publicRoutes = ['/login', '/register', '/survey']
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
-
-  // Check if it's a public route
+  
+  // Verificar si es una ruta pública
   const isPublicRoute = publicRoutes.some(route => pathname.startsWith(route))
   
-  // During development, allow all routes
-  // TODO: Remove this in production
-  const isDevelopment = process.env.NODE_ENV === "development"
-  const isDevRoute = devRoutes.some(route => pathname === route || pathname.startsWith(route))
+  // Verificar si es una ruta de API (no proteger APIs, se manejan internamente)
+  const isApiRoute = pathname.startsWith('/api')
   
-  if (isPublicRoute || (isDevelopment && isDevRoute)) {
+  // Verificar si hay token de autenticación
+  const token = request.cookies.get('auth-token')?.value
+  
+  // Si es ruta pública o API, permitir acceso
+  if (isPublicRoute || isApiRoute) {
+    // Si está logueado y va a login/register, redirigir al dashboard
+    if (token && (pathname === '/login' || pathname === '/register')) {
+      return NextResponse.redirect(new URL('/', request.url))
+    }
     return NextResponse.next()
   }
-
-  // Check for authentication token
-  // TODO: Implement actual token validation
-  const token = request.cookies.get("auth-token")?.value
-
-  // For now, allow all requests in development
-  if (!token && !isDevelopment) {
-    // Redirect to login page
-    const loginUrl = new URL("/login", request.url)
-    loginUrl.searchParams.set("from", pathname)
+  
+  // Si no hay token y no es ruta pública, redirigir a login
+  if (!token) {
+    const loginUrl = new URL('/login', request.url)
+    loginUrl.searchParams.set('from', pathname)
     return NextResponse.redirect(loginUrl)
   }
-
+  
   return NextResponse.next()
 }
 
@@ -53,7 +44,6 @@ export const config = {
      * - favicon.ico (favicon file)
      * - public folder
      */
-    "/((?!_next/static|_next/image|favicon.ico|public).*)",
+    '/((?!_next/static|_next/image|favicon.ico|.*\\..*|public).*)',
   ],
 }
-

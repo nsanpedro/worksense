@@ -73,16 +73,17 @@ export function RightSidebar() {
                   See what your team members will experience
                 </p>
               </div>
-              <Link href="/survey/preview">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full gap-2"
-                >
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full gap-2"
+                asChild
+              >
+                <Link href="/survey/preview">
                   <ExternalLink className="w-4 h-4" />
                   View Public Survey
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </CardContent>
         </Card>

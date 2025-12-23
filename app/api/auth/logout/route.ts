@@ -1,9 +1,15 @@
-import { NextResponse } from "next/server"
+import { NextResponse } from 'next/server'
 
 export async function POST() {
-  // TODO: Implement actual logout logic
-  // Clear session/cookies, invalidate token, etc.
+  const response = NextResponse.json({ success: true })
   
-  return NextResponse.json({ success: true })
-}
+  // Eliminar cookie
+  response.cookies.set('auth-token', '', {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    maxAge: 0,
+  })
 
+  return response
+}

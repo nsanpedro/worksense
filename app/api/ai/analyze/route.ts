@@ -1,45 +1,48 @@
-import { NextRequest, NextResponse } from "next/server"
+import { NextRequest, NextResponse } from 'next/server'
+import { getCurrentUser } from '@/lib/auth'
+import { analyzeSurveyResponses, SurveyResponseData } from '@/lib/openai'
+import { Role } from '@prisma/client'
 
+// POST - Analizar respuestas manualmente (sin survey en DB)
+// Útil para demos o análisis rápido
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json()
-    const { surveyResponses, analysisType } = body
-
-    // TODO: Integrate with your AI service (OpenAI, Anthropic, etc.)
-    // This endpoint will analyze survey responses and generate insights
+    const user = await getCurrentUser(request)
     
-    // Placeholder response
-    return NextResponse.json({
-      insights: [
-        {
-          id: "insight_1",
-          category: "alignment",
-          title: "Team alignment is improving",
-          description: "Based on survey responses, team alignment has increased by 5 points.",
-          confidence: 0.85,
-          sentiment: "positive",
-        },
-        {
-          id: "insight_2", 
-          category: "risk",
-          title: "Burnout risk detected",
-          description: "Several responses indicate increased stress levels among team members.",
-          confidence: 0.72,
-          sentiment: "negative",
-        },
-      ],
-      summary: "Overall positive trend with some areas requiring attention.",
-      recommendedActions: [
-        "Schedule 1-on-1 check-ins with team leads",
-        "Review current workload distribution",
-        "Implement weekly wellness check-ins",
-      ],
-    })
+    if (!user) {
+      return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
+    }
+
+    const body = await request.json()
+    const { surveyTitle, responses } = body
+
+    if (!surveyTitle || !responses || !Array.isArray(responses)) {
+      return NextResponse.json(
+        { error: 'surveyTitle y responses son requeridos' }, 
+        { status: 400 }
+      )
+    }
+
+    // Validar formato de responses
+    const validResponses: SurveyResponseData[] = responses.map((r: {
+      role: Role
+      answers: { question: string; questionType: string; value: string; numericValue?: number }[]
+    }) => ({
+      role: r.role,
+      answers: r.answers.map(a => ({
+        question: a.question,
+        questionType: a.questionType || 'SCALE',
+        value: a.value,
+        numericValue: a.numericValue
+      }))
+    }))
+
+    // Llamar a OpenAI para análisis
+    const analysis = await analyzeSurveyResponses(surveyTitle, validResponses)
+
+    return NextResponse.json({ analysis })
   } catch (error) {
-    return NextResponse.json(
-      { error: "Analysis failed" },
-      { status: 500 }
-    )
+    console.error('Analyze error:', error)
+    return NextResponse.json({ error: 'Error al analizar' }, { status: 500 })
   }
 }
-

@@ -1,0 +1,221 @@
+// WorkSense MVP - Database Schema
+// SQLite for development, easily migrable to PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// ORGANIZATIONS & TEAMS
+// ============================================
+
+model Organization {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  teams   Team[]
+  users   User[]
+  surveys Survey[]
+}
+
+model Team {
+  id             String   @id @default(uuid())
+  name           String
+  organizationId String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  members      User[]
+  surveys      Survey[]
+}
+
+// ============================================
+// USERS & ROLES
+// ============================================
+
+// Roles específicos para el MVP
+// PM, EM, TECH_LEAD, STAKEHOLDER, ADMIN
+enum Role {
+  ADMIN
+  PM
+  EM
+  TECH_LEAD
+  STAKEHOLDER
+}
+
+model User {
+  id             String   @id @default(uuid())
+  email          String   @unique
+  name           String
+  password       String
+  role           Role     @default(PM)
+  organizationId String
+  teamId         String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  organization Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  team         Team?             @relation(fields: [teamId], references: [id])
+  responses    SurveyResponse[]
+}
+
+// ============================================
+// SURVEYS
+// ============================================
+
+enum SurveyStatus {
+  DRAFT
+  ACTIVE
+  COMPLETED
+  ARCHIVED
+}
+
+model Survey {
+  id             String       @id @default(uuid())
+  title          String
+  description    String?
+  status         SurveyStatus @default(DRAFT)
+  organizationId String
+  teamId         String?
+  deadline       DateTime?
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  organization Organization     @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  team         Team?            @relation(fields: [teamId], references: [id])
+  questions    Question[]
+  responses    SurveyResponse[]
+  insights     Insight[]
+}
+
+// ============================================
+// QUESTIONS - Por ROL
+// ============================================
+
+enum QuestionType {
+  SCALE      // 1-10
+  TEXT       // Respuesta libre
+  CHOICE     // Multiple choice
+}
+
+model Question {
+  id        String       @id @default(uuid())
+  text      String
+  type      QuestionType @default(SCALE)
+  order     Int
+  surveyId  String
+  targetRole Role?       // Si es null, aplica a todos los roles
+  createdAt DateTime     @default(now())
+
+  survey  Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  answers Answer[]
+}
+
+// ============================================
+// RESPONSES & ANSWERS
+// ============================================
+
+model SurveyResponse {
+  id          String   @id @default(uuid())
+  userId      String
+  surveyId    String
+  submittedAt DateTime @default(now())
+
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  survey  Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  answers Answer[]
+
+  @@unique([userId, surveyId]) // Un usuario solo puede responder una vez por survey
+}
+
+model Answer {
+  id         String  @id @default(uuid())
+  responseId String
+  questionId String
+  value      String  // Para SCALE: "7", para TEXT: "respuesta libre", para CHOICE: "option_id"
+  numericValue Int?  // Para facilitar cálculos en preguntas SCALE
+
+  response SurveyResponse @relation(fields: [responseId], references: [id], onDelete: Cascade)
+  question Question       @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([responseId, questionId]) // Una respuesta por pregunta
+}
+
+// ============================================
+// AI INSIGHTS & ACTIONS
+// ============================================
+
+enum InsightCategory {
+  ALIGNMENT
+  RISK
+  COMMUNICATION
+  PROCESS
+  STAKEHOLDER // Específico para fricción con stakeholders
+}
+
+enum InsightImpact {
+  POSITIVE
+  NEEDS_ATTENTION
+  HIGH_RISK
+}
+
+model Insight {
+  id          String          @id @default(uuid())
+  surveyId    String
+  category    InsightCategory
+  title       String
+  description String
+  impact      InsightImpact
+  confidence  Float           @default(0.8) // 0-1, qué tan seguro está el AI
+  rawAnalysis String?         // JSON con el análisis completo de OpenAI
+  createdAt   DateTime        @default(now())
+
+  survey  Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  actions Action[]
+}
+
+enum ActionStatus {
+  SUGGESTED  // Recién generada por AI
+  PENDING    // Aceptada, pendiente de inicio
+  IN_PROGRESS
+  COMPLETED
+  DISMISSED  // Descartada
+}
+
+model Action {
+  id          String       @id @default(uuid())
+  insightId   String
+  title       String
+  description String
+  ownerRole   Role?        // Rol sugerido para liderar la acción
+  status      ActionStatus @default(SUGGESTED)
+  dueDate     DateTime?
+  progress    Int          @default(0) // 0-100
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  insight Insight @relation(fields: [insightId], references: [id], onDelete: Cascade)
+}
+
+// ============================================
+// METRICS HISTORY (para trends)
+// ============================================
+
+model AlignmentScore {
+  id             String   @id @default(uuid())
+  surveyId       String   @unique
+  organizationId String
+  teamId         String?
+  score          Int      // 0-100
+  breakdown      String?  // JSON con breakdown por categoría
+  calculatedAt   DateTime @default(now())
+}

@@ -40,3 +40,14 @@ next-env.d.ts
 *.swp
 *.swo
 
+# Prisma
+/lib/generated/prisma
+/prisma/*.db
+/prisma/*.db-journal
+
+# NPM Cache
+npm-cache/
+
+# Local development certificates
+*.pem
+localhost*.pem
