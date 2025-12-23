@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { getCurrentUser } from '@/lib/auth'
 import { PREDEFINED_QUESTIONS } from '@/lib/openai'
-import { Role } from '@prisma/client'
+import { Role } from '@/types/database'
 
 // GET - Listar surveys de la organización
 export async function GET(request: NextRequest) {

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { getCurrentUser, hashPassword } from '@/lib/auth'
-import { Role } from '@prisma/client'
+import { Role } from '@/types/database'
 
 // GET - Listar usuarios de la organización
 export async function GET(request: NextRequest) {

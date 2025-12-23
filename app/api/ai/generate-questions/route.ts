@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 import { generateSurveyQuestions, PREDEFINED_QUESTIONS } from '@/lib/openai'
-import { Role } from '@prisma/client'
+import { Role } from '@/types/database'
 
 // POST - Generar preguntas con IA
 export async function POST(request: NextRequest) {

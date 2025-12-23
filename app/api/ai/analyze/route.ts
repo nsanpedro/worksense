@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getCurrentUser } from '@/lib/auth'
 import { analyzeSurveyResponses, SurveyResponseData } from '@/lib/openai'
-import { Role } from '@prisma/client'
+import { Role } from '@/types/database'
 
 // POST - Analizar respuestas manualmente (sin survey en DB)
 // Útil para demos o análisis rápido
