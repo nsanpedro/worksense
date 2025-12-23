@@ -1,0 +1,1205 @@
+0 verbose cli /Users/nicolassanpedro/.nvm/versions/node/v18.20.7/bin/node /Users/nicolassanpedro/.nvm/versions/node/v18.20.7/bin/npm
+1 info using npm@10.8.2
+2 info using node@v18.20.7
+3 silly config load:file:/Users/nicolassanpedro/.nvm/versions/node/v18.20.7/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/.npmrc
+5 silly config load:file:/Users/nicolassanpedro/.npmrc
+6 silly config load:file:/Users/nicolassanpedro/.nvm/versions/node/v18.20.7/etc/npmrc
+7 verbose title npm install next@latest
+8 verbose argv "install" "next@latest"
+9 verbose logfile logs-max:10 dir:/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/npm-cache/_logs/2025-12-23T10_36_05_504Z-
+10 verbose logfile /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/npm-cache/_logs/2025-12-23T10_36_05_504Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile done cleaning log files
+13 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+14 http fetch GET 200 https://registry.npmjs.org/next 53ms (cache hit)
+15 silly packumentCache corgi:https://registry.npmjs.org/next set size:23127871 disposed:false
+16 silly idealTree buildDeps
+17 silly fetch manifest next@16.1.1
+18 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/next 23ms (cache hit)
+20 silly packumentCache full:https://registry.npmjs.org/next set size:28220841 disposed:false
+21 silly fetch manifest @opentelemetry/api@^1.1.0
+22 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 2ms (cache hit)
+24 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi set size:455567 disposed:false
+25 silly fetch manifest @playwright/test@^1.51.1
+26 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 7ms (cache hit)
+28 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest set size:8565864 disposed:false
+29 silly fetch manifest babel-plugin-react-compiler@*
+30 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler cache-miss
+31 http fetch GET 200 https://registry.npmjs.org/babel-plugin-react-compiler 123ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler set size:undefined disposed:false
+33 silly fetch manifest react@^18.3.1
+34 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/react 6ms (cache hit)
+36 silly packumentCache full:https://registry.npmjs.org/react set size:6362607 disposed:false
+37 silly fetch manifest react-dom@^18.3.1
+38 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+39 http fetch GET 200 https://registry.npmjs.org/react-dom 7ms (cache hit)
+40 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8375290 disposed:false
+41 silly fetch manifest sass@^1.3.0
+42 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+43 http fetch GET 200 https://registry.npmjs.org/sass 2ms (cache hit)
+44 silly packumentCache full:https://registry.npmjs.org/sass set size:717876 disposed:false
+45 silly placeDep ROOT next@16.1.1 REPLACE for: worksense@0.1.0 want: 16.1.1
+46 silly fetch manifest @next/env@16.1.1
+47 silly packumentCache full:https://registry.npmjs.org/@next%2fenv cache-miss
+48 silly fetch manifest styled-jsx@5.1.6
+49 silly packumentCache full:https://registry.npmjs.org/styled-jsx cache-miss
+50 silly fetch manifest @swc/helpers@0.5.15
+51 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers cache-miss
+52 silly fetch manifest baseline-browser-mapping@^2.8.3
+53 silly packumentCache full:https://registry.npmjs.org/baseline-browser-mapping cache-miss
+54 silly fetch manifest sharp@^0.34.4
+55 silly packumentCache full:https://registry.npmjs.org/sharp cache-miss
+56 silly fetch manifest @next/swc-darwin-x64@16.1.1
+57 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-x64 cache-miss
+58 silly fetch manifest @next/swc-darwin-arm64@16.1.1
+59 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-arm64 cache-miss
+60 silly fetch manifest @next/swc-linux-x64-gnu@16.1.1
+61 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-gnu cache-miss
+62 silly fetch manifest @next/swc-linux-x64-musl@16.1.1
+63 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-musl cache-miss
+64 silly fetch manifest @next/swc-win32-x64-msvc@16.1.1
+65 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-x64-msvc cache-miss
+66 silly fetch manifest @next/swc-linux-arm64-gnu@16.1.1
+67 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu cache-miss
+68 silly fetch manifest @next/swc-linux-arm64-musl@16.1.1
+69 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-musl cache-miss
+70 silly fetch manifest @next/swc-win32-arm64-msvc@16.1.1
+71 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/styled-jsx 9ms (cache hit)
+73 silly packumentCache full:https://registry.npmjs.org/styled-jsx set size:436113 disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-x64 14ms (cache hit)
+75 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-x64 set size:4760819 disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-x64-gnu 26ms (cache hit)
+77 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-gnu set size:4856713 disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc 38ms (cache hit)
+79 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc set size:4641787 disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-arm64 57ms (cache hit)
+81 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-arm64 set size:4813365 disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/@next%2fenv 72ms (cache hit)
+83 silly packumentCache full:https://registry.npmjs.org/@next%2fenv set size:6703492 disposed:false
+84 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-x64-msvc 91ms (cache hit)
+85 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-x64-msvc set size:4831105 disposed:false
+86 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu 102ms (cache hit)
+87 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu set size:4657904 disposed:false
+88 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-arm64-musl 116ms (cache hit)
+89 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-musl set size:4673966 disposed:false
+90 http fetch GET 200 https://registry.npmjs.org/@swc%2fhelpers 129ms (cache hit)
+91 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers set size:631874 disposed:false
+92 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-x64-musl 134ms (cache hit)
+93 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-musl set size:4613443 disposed:false
+94 http fetch GET 200 https://registry.npmjs.org/baseline-browser-mapping 148ms (cache miss)
+95 silly packumentCache full:https://registry.npmjs.org/baseline-browser-mapping set size:undefined disposed:false
+96 http fetch GET 200 https://registry.npmjs.org/sharp 256ms (cache miss)
+97 silly packumentCache full:https://registry.npmjs.org/sharp set size:undefined disposed:false
+98 silly fetch manifest react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+99 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+100 http fetch GET 200 https://registry.npmjs.org/react 6ms (cache hit)
+101 silly packumentCache full:https://registry.npmjs.org/react set size:6362607 disposed:false
+102 silly placeDep ROOT @next/env@16.1.1 OK for: next@16.1.1 want: 16.1.1
+103 silly placeDep ROOT @next/swc-darwin-arm64@16.1.1 OK for: next@16.1.1 want: 16.1.1
+104 silly placeDep ROOT @next/swc-darwin-x64@16.1.1 OK for: next@16.1.1 want: 16.1.1
+105 silly placeDep ROOT @next/swc-linux-arm64-gnu@16.1.1 OK for: next@16.1.1 want: 16.1.1
+106 silly placeDep ROOT @next/swc-linux-arm64-musl@16.1.1 OK for: next@16.1.1 want: 16.1.1
+107 silly placeDep ROOT @next/swc-linux-x64-gnu@16.1.1 OK for: next@16.1.1 want: 16.1.1
+108 silly placeDep ROOT @next/swc-linux-x64-musl@16.1.1 OK for: next@16.1.1 want: 16.1.1
+109 silly placeDep ROOT @next/swc-win32-arm64-msvc@16.1.1 OK for: next@16.1.1 want: 16.1.1
+110 silly placeDep ROOT @next/swc-win32-x64-msvc@16.1.1 OK for: next@16.1.1 want: 16.1.1
+111 silly placeDep ROOT @swc/helpers@0.5.15 OK for: next@16.1.1 want: 0.5.15
+112 silly placeDep ROOT baseline-browser-mapping@2.9.11 OK for: next@16.1.1 want: ^2.8.3
+113 silly placeDep ROOT sharp@0.34.5 OK for: next@16.1.1 want: ^0.34.4
+114 silly placeDep ROOT styled-jsx@5.1.6 OK for: next@16.1.1 want: 5.1.6
+115 silly fetch manifest @img/colour@^1.0.0
+116 silly packumentCache full:https://registry.npmjs.org/@img%2fcolour cache-miss
+117 silly fetch manifest @img/sharp-darwin-arm64@0.34.5
+118 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-arm64 cache-miss
+119 silly fetch manifest @img/sharp-darwin-x64@0.34.5
+120 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-x64 cache-miss
+121 silly fetch manifest @img/sharp-libvips-darwin-arm64@1.2.4
+122 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-arm64 cache-miss
+123 silly fetch manifest @img/sharp-libvips-darwin-x64@1.2.4
+124 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-x64 cache-miss
+125 silly fetch manifest @img/sharp-libvips-linux-arm@1.2.4
+126 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm cache-miss
+127 silly fetch manifest @img/sharp-libvips-linux-arm64@1.2.4
+128 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm64 cache-miss
+129 silly fetch manifest @img/sharp-libvips-linux-ppc64@1.2.4
+130 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-ppc64 cache-miss
+131 silly fetch manifest @img/sharp-libvips-linux-riscv64@1.2.4
+132 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-riscv64 cache-miss
+133 silly fetch manifest @img/sharp-libvips-linux-s390x@1.2.4
+134 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-s390x cache-miss
+135 silly fetch manifest @img/sharp-libvips-linux-x64@1.2.4
+136 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-x64 cache-miss
+137 silly fetch manifest @img/sharp-libvips-linuxmusl-arm64@1.2.4
+138 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-arm64 cache-miss
+139 silly fetch manifest @img/sharp-libvips-linuxmusl-x64@1.2.4
+140 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-x64 cache-miss
+141 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-darwin-arm64 65ms (cache miss)
+142 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-arm64 set size:undefined disposed:false
+143 silly fetch manifest @img/sharp-linux-arm@0.34.5
+144 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm cache-miss
+145 http fetch GET 200 https://registry.npmjs.org/@img%2fcolour 80ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/@img%2fcolour set size:undefined disposed:false
+147 silly fetch manifest @img/sharp-linux-arm64@0.34.5
+148 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm64 cache-miss
+149 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-x64 119ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-x64 set size:undefined disposed:false
+151 silly fetch manifest @img/sharp-linux-ppc64@0.34.5
+152 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-ppc64 cache-miss
+153 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-darwin-x64 122ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-x64 set size:undefined disposed:false
+155 silly fetch manifest @img/sharp-linux-riscv64@0.34.5
+156 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-riscv64 cache-miss
+157 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-arm 58ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm set size:undefined disposed:false
+159 silly fetch manifest @img/sharp-linux-s390x@0.34.5
+160 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-s390x cache-miss
+161 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm 124ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm set size:undefined disposed:false
+163 silly fetch manifest @img/sharp-linux-x64@0.34.5
+164 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-x64 cache-miss
+165 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-arm64 123ms (cache miss)
+166 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-arm64 set size:undefined disposed:false
+167 silly fetch manifest @img/sharp-linuxmusl-arm64@0.34.5
+168 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-arm64 cache-miss
+169 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-darwin-x64 125ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-x64 set size:undefined disposed:false
+171 silly fetch manifest @img/sharp-linuxmusl-x64@0.34.5
+172 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-x64 cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-darwin-arm64 126ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-arm64 set size:undefined disposed:false
+175 silly fetch manifest @img/sharp-wasm32@0.34.5
+176 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-wasm32 cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-x64 125ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-x64 set size:undefined disposed:false
+179 silly fetch manifest @img/sharp-win32-arm64@0.34.5
+180 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-arm64 cache-miss
+181 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-riscv64 128ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-riscv64 set size:undefined disposed:false
+183 silly fetch manifest @img/sharp-win32-ia32@0.34.5
+184 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-ia32 cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-arm64 53ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm64 set size:undefined disposed:false
+187 silly fetch manifest @img/sharp-win32-x64@0.34.5
+188 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-x64 cache-miss
+189 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-ppc64 135ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-ppc64 set size:undefined disposed:false
+191 silly fetch manifest client-only@0.0.1
+192 silly packumentCache full:https://registry.npmjs.org/client-only cache-miss
+193 http fetch GET 200 https://registry.npmjs.org/client-only 1ms (cache hit)
+194 silly packumentCache full:https://registry.npmjs.org/client-only set size:2750 disposed:false
+195 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm64 145ms (cache miss)
+196 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm64 set size:undefined disposed:false
+197 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-x64 47ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-x64 set size:undefined disposed:false
+199 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linuxmusl-arm64 48ms (cache miss)
+200 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-arm64 set size:undefined disposed:false
+201 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linuxmusl-x64 49ms (cache miss)
+202 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-x64 set size:undefined disposed:false
+203 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-ppc64 62ms (cache miss)
+204 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-ppc64 set size:undefined disposed:false
+205 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-riscv64 68ms (cache miss)
+206 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-riscv64 set size:undefined disposed:false
+207 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-wasm32 75ms (cache miss)
+208 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-wasm32 set size:undefined disposed:false
+209 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-win32-arm64 79ms (cache miss)
+210 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-arm64 set size:undefined disposed:false
+211 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-win32-x64 72ms (cache miss)
+212 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-x64 set size:undefined disposed:false
+213 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-s390x 331ms (cache miss)
+214 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-s390x set size:undefined disposed:false
+215 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-s390x 270ms (cache miss)
+216 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-s390x set size:undefined disposed:false
+217 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-win32-ia32 447ms (cache miss)
+218 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-ia32 set size:undefined disposed:false
+219 silly placeDep ROOT @img/colour@1.0.0 OK for: sharp@0.34.5 want: ^1.0.0
+220 silly placeDep ROOT @img/sharp-darwin-arm64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+221 silly placeDep ROOT @img/sharp-darwin-x64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+222 silly placeDep ROOT @img/sharp-libvips-darwin-arm64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+223 silly placeDep ROOT @img/sharp-libvips-darwin-x64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+224 silly placeDep ROOT @img/sharp-libvips-linux-arm@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+225 silly placeDep ROOT @img/sharp-libvips-linux-arm64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+226 silly placeDep ROOT @img/sharp-libvips-linux-ppc64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+227 silly placeDep ROOT @img/sharp-libvips-linux-riscv64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+228 silly placeDep ROOT @img/sharp-libvips-linux-s390x@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+229 silly placeDep ROOT @img/sharp-libvips-linux-x64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+230 silly placeDep ROOT @img/sharp-libvips-linuxmusl-arm64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+231 silly placeDep ROOT @img/sharp-libvips-linuxmusl-x64@1.2.4 OK for: sharp@0.34.5 want: 1.2.4
+232 silly placeDep ROOT @img/sharp-linux-arm@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+233 silly placeDep ROOT @img/sharp-linux-arm64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+234 silly placeDep ROOT @img/sharp-linux-ppc64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+235 silly placeDep ROOT @img/sharp-linux-riscv64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+236 silly placeDep ROOT @img/sharp-linux-s390x@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+237 silly placeDep ROOT @img/sharp-linux-x64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+238 silly placeDep ROOT @img/sharp-linuxmusl-arm64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+239 silly placeDep ROOT @img/sharp-linuxmusl-x64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+240 silly placeDep ROOT @img/sharp-wasm32@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+241 silly placeDep ROOT @img/sharp-win32-arm64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+242 silly placeDep ROOT @img/sharp-win32-ia32@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+243 silly placeDep ROOT @img/sharp-win32-x64@0.34.5 OK for: sharp@0.34.5 want: 0.34.5
+244 silly placeDep ROOT client-only@0.0.1 OK for: styled-jsx@5.1.6 want: 0.0.1
+245 warn EBADENGINE Unsupported engine {
+245 warn EBADENGINE   package: 'next@16.1.1',
+245 warn EBADENGINE   required: { node: '>=20.9.0' },
+245 warn EBADENGINE   current: { node: 'v18.20.7', npm: '10.8.2' }
+245 warn EBADENGINE }
+246 silly reify mark retired [
+246 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/env'
+246 silly reify ]
+247 silly reify mark retired [
+247 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-darwin-arm64'
+247 silly reify ]
+248 silly reify mark retired [
+248 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@swc/counter'
+248 silly reify ]
+249 silly reify mark retired [
+249 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@swc/helpers'
+249 silly reify ]
+250 silly reify mark retired [
+250 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/busboy'
+250 silly reify ]
+251 silly reify mark retired [
+251 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/next',
+251 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.bin/next'
+251 silly reify ]
+252 silly reify mark retired [
+252 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/streamsearch'
+252 silly reify ]
+253 silly reify mark retired [
+253 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/styled-jsx'
+253 silly reify ]
+254 silly reify moves {
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/env': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/.env-C9YZDMR7',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-darwin-arm64': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/.swc-darwin-arm64-5vJwid7A',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@swc/counter': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@swc/.counter-ksxLDzeS',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@swc/helpers': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@swc/.helpers-2T02d1m7',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/busboy': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.busboy-3vyezRiM',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/next': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.next-2pXf3pXc',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.bin/next': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.bin/.next-gpbTR2U5',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/streamsearch': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.streamsearch-L7xV75ZR',
+254 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/styled-jsx': '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/.styled-jsx-kcDsQVHu'
+254 silly reify }
+255 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-wasm32-wasi
+256 silly reify mark deleted [
+256 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-wasm32-wasi'
+256 silly reify ]
+257 silly audit bulk request {
+257 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+257 silly audit   '@babel/runtime': [ '7.28.4' ],
+257 silly audit   '@emnapi/core': [ '1.7.1' ],
+257 silly audit   '@emnapi/runtime': [ '1.7.1' ],
+257 silly audit   '@emnapi/wasi-threads': [ '1.1.0' ],
+257 silly audit   '@eslint-community/eslint-utils': [ '4.9.0' ],
+257 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+257 silly audit   '@eslint/eslintrc': [ '2.1.4' ],
+257 silly audit   '@eslint/js': [ '8.57.1' ],
+257 silly audit   '@floating-ui/core': [ '1.7.3' ],
+257 silly audit   '@floating-ui/dom': [ '1.7.4' ],
+257 silly audit   '@floating-ui/react-dom': [ '2.1.6' ],
+257 silly audit   '@floating-ui/utils': [ '0.2.10' ],
+257 silly audit   '@humanwhocodes/config-array': [ '0.13.0' ],
+257 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+257 silly audit   '@humanwhocodes/object-schema': [ '2.0.3' ],
+257 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+257 silly audit   'ansi-regex': [ '6.2.2', '5.0.1' ],
+257 silly audit   'strip-ansi': [ '7.1.2', '6.0.1' ],
+257 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+257 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+257 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+257 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+257 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+257 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+257 silly audit   '@next/eslint-plugin-next': [ '14.2.21' ],
+257 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+257 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+257 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+257 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+257 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+257 silly audit   '@radix-ui/number': [ '1.1.1' ],
+257 silly audit   '@radix-ui/primitive': [ '1.1.3' ],
+257 silly audit   '@radix-ui/react-accordion': [ '1.2.12' ],
+257 silly audit   '@radix-ui/react-alert-dialog': [ '1.1.15' ],
+257 silly audit   '@radix-ui/react-slot': [ '1.2.3', '1.2.4' ],
+257 silly audit   '@radix-ui/react-arrow': [ '1.1.7' ],
+257 silly audit   '@radix-ui/react-aspect-ratio': [ '1.1.8' ],
+257 silly audit   '@radix-ui/react-primitive': [ '2.1.4', '2.1.3' ],
+257 silly audit   '@radix-ui/react-avatar': [ '1.1.11' ],
+257 silly audit   '@radix-ui/react-context': [ '1.1.3', '1.1.2' ],
+257 silly audit   '@radix-ui/react-checkbox': [ '1.3.3' ],
+257 silly audit   '@radix-ui/react-collapsible': [ '1.1.12' ],
+257 silly audit   '@radix-ui/react-collection': [ '1.1.7' ],
+257 silly audit   '@radix-ui/react-compose-refs': [ '1.1.2' ],
+257 silly audit   '@radix-ui/react-context-menu': [ '2.2.16' ],
+257 silly audit   '@radix-ui/react-dialog': [ '1.1.15' ],
+257 silly audit   '@radix-ui/react-direction': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-dismissable-layer': [ '1.1.11' ],
+257 silly audit   '@radix-ui/react-dropdown-menu': [ '2.1.16' ],
+257 silly audit   '@radix-ui/react-focus-guards': [ '1.1.3' ],
+257 silly audit   '@radix-ui/react-focus-scope': [ '1.1.7' ],
+257 silly audit   '@radix-ui/react-hover-card': [ '1.1.15' ],
+257 silly audit   '@radix-ui/react-id': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-label': [ '2.1.8' ],
+257 silly audit   '@radix-ui/react-menu': [ '2.1.16' ],
+257 silly audit   '@radix-ui/react-menubar': [ '1.1.16' ],
+257 silly audit   '@radix-ui/react-navigation-menu': [ '1.2.14' ],
+257 silly audit   '@radix-ui/react-popover': [ '1.1.15' ],
+257 silly audit   '@radix-ui/react-popper': [ '1.2.8' ],
+257 silly audit   '@radix-ui/react-portal': [ '1.1.9' ],
+257 silly audit   '@radix-ui/react-presence': [ '1.1.5' ],
+257 silly audit   '@radix-ui/react-progress': [ '1.1.8' ],
+257 silly audit   '@radix-ui/react-radio-group': [ '1.3.8' ],
+257 silly audit   '@radix-ui/react-roving-focus': [ '1.1.11' ],
+257 silly audit   '@radix-ui/react-scroll-area': [ '1.2.10' ],
+257 silly audit   '@radix-ui/react-select': [ '2.2.6' ],
+257 silly audit   '@radix-ui/react-separator': [ '1.1.8' ],
+257 silly audit   '@radix-ui/react-slider': [ '1.3.6' ],
+257 silly audit   '@radix-ui/react-switch': [ '1.2.6' ],
+257 silly audit   '@radix-ui/react-tabs': [ '1.1.13' ],
+257 silly audit   '@radix-ui/react-toggle': [ '1.1.10' ],
+257 silly audit   '@radix-ui/react-toggle-group': [ '1.1.11' ],
+257 silly audit   '@radix-ui/react-tooltip': [ '1.2.8' ],
+257 silly audit   '@radix-ui/react-use-callback-ref': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-use-controllable-state': [ '1.2.2' ],
+257 silly audit   '@radix-ui/react-use-effect-event': [ '0.0.2' ],
+257 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-use-is-hydrated': [ '0.1.0' ],
+257 silly audit   '@radix-ui/react-use-layout-effect': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-use-previous': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-use-rect': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-use-size': [ '1.1.1' ],
+257 silly audit   '@radix-ui/react-visually-hidden': [ '1.2.3' ],
+257 silly audit   '@radix-ui/rect': [ '1.1.1' ],
+257 silly audit   '@rtsao/scc': [ '1.1.0' ],
+257 silly audit   '@rushstack/eslint-patch': [ '1.15.0' ],
+257 silly audit   '@tailwindcss/node': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.1.18' ],
+257 silly audit   '@tailwindcss/postcss': [ '4.1.18' ],
+257 silly audit   '@tybys/wasm-util': [ '0.10.1' ],
+257 silly audit   '@types/d3-array': [ '3.2.2' ],
+257 silly audit   '@types/d3-color': [ '3.1.3' ],
+257 silly audit   '@types/d3-ease': [ '3.0.2' ],
+257 silly audit   '@types/d3-interpolate': [ '3.0.4' ],
+257 silly audit   '@types/d3-path': [ '3.1.1' ],
+257 silly audit   '@types/d3-scale': [ '4.0.9' ],
+257 silly audit   '@types/d3-shape': [ '3.1.7' ],
+257 silly audit   '@types/d3-time': [ '3.0.4' ],
+257 silly audit   '@types/d3-timer': [ '3.0.2' ],
+257 silly audit   '@types/json5': [ '0.0.29' ],
+257 silly audit   '@types/node': [ '20.19.27' ],
+257 silly audit   '@types/prop-types': [ '15.7.15' ],
+257 silly audit   '@types/react': [ '18.3.27' ],
+257 silly audit   '@types/react-dom': [ '18.3.7' ],
+257 silly audit   '@typescript-eslint/eslint-plugin': [ '8.50.1' ],
+257 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+257 silly audit   '@typescript-eslint/parser': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/project-service': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/scope-manager': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/type-utils': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/types': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/typescript-estree': [ '8.50.1' ],
+257 silly audit   'brace-expansion': [ '2.0.2', '1.1.12' ],
+257 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+257 silly audit   '@typescript-eslint/utils': [ '8.50.1' ],
+257 silly audit   '@typescript-eslint/visitor-keys': [ '8.50.1' ],
+257 silly audit   'eslint-visitor-keys': [ '4.2.1', '3.4.3' ],
+257 silly audit   '@ungap/structured-clone': [ '1.3.0' ],
+257 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+257 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+257 silly audit   acorn: [ '8.15.0' ],
+257 silly audit   'acorn-jsx': [ '5.3.2' ],
+257 silly audit   ajv: [ '6.12.6' ],
+257 silly audit   'ansi-styles': [ '4.3.0', '6.2.3' ],
+257 silly audit   argparse: [ '2.0.1' ],
+257 silly audit   'aria-hidden': [ '1.2.6' ],
+257 silly audit   'aria-query': [ '5.3.2' ],
+257 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+257 silly audit   'array-includes': [ '3.1.9' ],
+257 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+257 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+257 silly audit   'array.prototype.flat': [ '1.3.3' ],
+257 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+257 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+257 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+257 silly audit   'ast-types-flow': [ '0.0.8' ],
+257 silly audit   'async-function': [ '1.0.0' ],
+257 silly audit   'available-typed-arrays': [ '1.0.7' ],
+257 silly audit   'axe-core': [ '4.11.0' ],
+257 silly audit   'axobject-query': [ '4.1.0' ],
+257 silly audit   'balanced-match': [ '1.0.2' ],
+257 silly audit   'call-bind': [ '1.0.8' ],
+257 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+257 silly audit   'call-bound': [ '1.0.4' ],
+257 silly audit   callsites: [ '3.1.0' ],
+257 silly audit   'caniuse-lite': [ '1.0.30001761' ],
+257 silly audit   chalk: [ '4.1.2' ],
+257 silly audit   'class-variance-authority': [ '0.7.1' ],
+257 silly audit   clsx: [ '2.1.1' ],
+257 silly audit   cmdk: [ '1.1.1' ],
+257 silly audit   'color-convert': [ '2.0.1' ],
+257 silly audit   'color-name': [ '1.1.4' ],
+257 silly audit   'concat-map': [ '0.0.1' ],
+257 silly audit   'cross-spawn': [ '7.0.6' ],
+257 silly audit   csstype: [ '3.2.3' ],
+257 silly audit   'd3-array': [ '3.2.4' ],
+257 silly audit   'd3-color': [ '3.1.0' ],
+257 silly audit   'd3-ease': [ '3.0.1' ],
+257 silly audit   'd3-format': [ '3.1.0' ],
+257 silly audit   'd3-interpolate': [ '3.0.1' ],
+257 silly audit   'd3-path': [ '3.1.0' ],
+257 silly audit   'd3-scale': [ '4.0.2' ],
+257 silly audit   'd3-shape': [ '3.2.0' ],
+257 silly audit   'd3-time': [ '3.1.0' ],
+257 silly audit   'd3-time-format': [ '4.1.0' ],
+257 silly audit   'd3-timer': [ '3.0.1' ],
+257 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+257 silly audit   'data-view-buffer': [ '1.0.2' ],
+257 silly audit   'data-view-byte-length': [ '1.0.2' ],
+257 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+257 silly audit   'date-fns': [ '3.6.0' ],
+257 silly audit   debug: [ '4.4.3', '3.2.7' ],
+257 silly audit   'decimal.js-light': [ '2.5.1' ],
+257 silly audit   'deep-is': [ '0.1.4' ],
+257 silly audit   'define-data-property': [ '1.1.4' ],
+257 silly audit   'define-properties': [ '1.2.1' ],
+257 silly audit   'detect-libc': [ '2.1.2' ],
+257 silly audit   'detect-node-es': [ '1.1.0' ],
+257 silly audit   doctrine: [ '3.0.0', '2.1.0' ],
+257 silly audit   'dom-helpers': [ '5.2.1' ],
+257 silly audit   'dunder-proto': [ '1.0.1' ],
+257 silly audit   eastasianwidth: [ '0.2.0' ],
+257 silly audit   'embla-carousel': [ '8.6.0' ],
+257 silly audit   'embla-carousel-react': [ '8.6.0' ],
+257 silly audit   'embla-carousel-reactive-utils': [ '8.6.0' ],
+257 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+257 silly audit   'enhanced-resolve': [ '5.18.4' ],
+257 silly audit   'es-abstract': [ '1.24.1' ],
+257 silly audit   'es-define-property': [ '1.0.1' ],
+257 silly audit   'es-errors': [ '1.3.0' ],
+257 silly audit   'es-iterator-helpers': [ '1.2.2' ],
+257 silly audit   'es-object-atoms': [ '1.1.1' ],
+257 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+257 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+257 silly audit   'es-to-primitive': [ '1.3.0' ],
+257 silly audit   'escape-string-regexp': [ '4.0.0' ],
+257 silly audit   eslint: [ '8.57.1' ],
+257 silly audit   'eslint-config-next': [ '14.2.21' ],
+257 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+257 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+257 silly audit   'eslint-module-utils': [ '2.12.1' ],
+257 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+257 silly audit   semver: [ '6.3.1', '7.7.3' ],
+257 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+257 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+257 silly audit   'eslint-plugin-react-hooks': [ '5.0.0-canary-7118f5dd7-20230705' ],
+257 silly audit   resolve: [ '2.0.0-next.5', '1.22.11' ],
+257 silly audit   'eslint-scope': [ '7.2.2' ],
+257 silly audit   espree: [ '9.6.1' ],
+257 silly audit   esquery: [ '1.6.0' ],
+257 silly audit   esrecurse: [ '4.3.0' ],
+257 silly audit   estraverse: [ '5.3.0' ],
+257 silly audit   esutils: [ '2.0.3' ],
+257 silly audit   eventemitter3: [ '4.0.7' ],
+257 silly audit   'fast-deep-equal': [ '3.1.3' ],
+257 silly audit   'fast-equals': [ '5.4.0' ],
+257 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+257 silly audit   'fast-levenshtein': [ '2.0.6' ],
+257 silly audit   fastq: [ '1.20.1' ],
+257 silly audit   fdir: [ '6.5.0' ],
+257 silly audit   'file-entry-cache': [ '6.0.1' ],
+257 silly audit   'find-up': [ '5.0.0' ],
+257 silly audit   'flat-cache': [ '3.2.0' ],
+257 silly audit   flatted: [ '3.3.3' ],
+257 silly audit   'for-each': [ '0.3.5' ],
+257 silly audit   'foreground-child': [ '3.3.1' ],
+257 silly audit   'framer-motion': [ '11.18.2' ],
+257 silly audit   'fs.realpath': [ '1.0.0' ],
+257 silly audit   'function-bind': [ '1.1.2' ],
+257 silly audit   'function.prototype.name': [ '1.1.8' ],
+257 silly audit   'functions-have-names': [ '1.2.3' ],
+257 silly audit   'generator-function': [ '2.0.1' ],
+257 silly audit   'get-intrinsic': [ '1.3.0' ],
+257 silly audit   'get-nonce': [ '1.0.1' ],
+257 silly audit   'get-proto': [ '1.0.1' ],
+257 silly audit   'get-symbol-description': [ '1.1.0' ],
+257 silly audit   'get-tsconfig': [ '4.13.0' ],
+257 silly audit   glob: [ '10.3.10', '7.2.3' ],
+257 silly audit   'glob-parent': [ '6.0.2' ],
+257 silly audit   globals: [ '13.24.0' ],
+257 silly audit   globalthis: [ '1.0.4' ],
+257 silly audit   gopd: [ '1.2.0' ],
+257 silly audit   'graceful-fs': [ '4.2.11' ],
+257 silly audit   graphemer: [ '1.4.0' ],
+257 silly audit   'has-bigints': [ '1.1.0' ],
+257 silly audit   'has-flag': [ '4.0.0' ],
+257 silly audit   'has-property-descriptors': [ '1.0.2' ],
+257 silly audit   'has-proto': [ '1.2.0' ],
+257 silly audit   'has-symbols': [ '1.1.0' ],
+257 silly audit   'has-tostringtag': [ '1.0.2' ],
+257 silly audit   hasown: [ '2.0.2' ],
+257 silly audit   'import-fresh': [ '3.3.1' ],
+257 silly audit   imurmurhash: [ '0.1.4' ],
+257 silly audit   inflight: [ '1.0.6' ],
+257 silly audit   inherits: [ '2.0.4' ],
+257 silly audit   'input-otp': [ '1.4.2' ],
+257 silly audit   'internal-slot': [ '1.1.0' ],
+257 silly audit   internmap: [ '2.0.3' ],
+257 silly audit   'is-array-buffer': [ '3.0.5' ],
+257 silly audit   'is-async-function': [ '2.1.1' ],
+257 silly audit   'is-bigint': [ '1.1.0' ],
+257 silly audit   'is-boolean-object': [ '1.2.2' ],
+257 silly audit   'is-bun-module': [ '2.0.0' ],
+257 silly audit   'is-callable': [ '1.2.7' ],
+257 silly audit   'is-core-module': [ '2.16.1' ],
+257 silly audit   'is-data-view': [ '1.0.2' ],
+257 silly audit   'is-date-object': [ '1.1.0' ],
+257 silly audit   'is-extglob': [ '2.1.1' ],
+257 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+257 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+257 silly audit   'is-generator-function': [ '1.1.2' ],
+257 silly audit   'is-glob': [ '4.0.3' ],
+257 silly audit   'is-map': [ '2.0.3' ],
+257 silly audit   'is-negative-zero': [ '2.0.3' ],
+257 silly audit   'is-number-object': [ '1.1.1' ],
+257 silly audit   'is-path-inside': [ '3.0.3' ],
+257 silly audit   'is-regex': [ '1.2.1' ],
+257 silly audit   'is-set': [ '2.0.3' ],
+257 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+257 silly audit   'is-string': [ '1.1.1' ],
+257 silly audit   'is-symbol': [ '1.1.1' ],
+257 silly audit   'is-typed-array': [ '1.1.15' ],
+257 silly audit   'is-weakmap': [ '2.0.2' ],
+257 silly audit   'is-weakref': [ '1.1.1' ],
+257 silly audit   'is-weakset': [ '2.0.4' ],
+257 silly audit   isarray: [ '2.0.5' ],
+257 silly audit   isexe: [ '2.0.0' ],
+257 silly audit   'iterator.prototype': [ '1.1.5' ],
+257 silly audit   jackspeak: [ '2.3.6' ],
+257 silly audit   jiti: [ '2.6.1' ],
+257 silly audit   'js-tokens': [ '4.0.0' ],
+257 silly audit   'js-yaml': [ '4.1.1' ],
+257 silly audit   'json-buffer': [ '3.0.1' ],
+257 silly audit   'json-schema-traverse': [ '0.4.1' ],
+257 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+257 silly audit   json5: [ '1.0.2' ],
+257 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+257 silly audit   keyv: [ '4.5.4' ],
+257 silly audit   'language-subtag-registry': [ '0.3.23' ],
+257 silly audit   'language-tags': [ '1.0.9' ],
+257 silly audit   levn: [ '0.4.1' ],
+257 silly audit   lightningcss: [ '1.30.2' ],
+257 silly audit   'lightningcss-android-arm64': [ '1.30.2' ],
+257 silly audit   'lightningcss-darwin-arm64': [ '1.30.2' ],
+257 silly audit   'lightningcss-darwin-x64': [ '1.30.2' ],
+257 silly audit   'lightningcss-freebsd-x64': [ '1.30.2' ],
+257 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.30.2' ],
+257 silly audit   'lightningcss-linux-arm64-gnu': [ '1.30.2' ],
+257 silly audit   'lightningcss-linux-arm64-musl': [ '1.30.2' ],
+257 silly audit   'lightningcss-linux-x64-gnu': [ '1.30.2' ],
+257 silly audit   'lightningcss-linux-x64-musl': [ '1.30.2' ],
+257 silly audit   'lightningcss-win32-arm64-msvc': [ '1.30.2' ],
+257 silly audit   'lightningcss-win32-x64-msvc': [ '1.30.2' ],
+257 silly audit   'locate-path': [ '6.0.0' ],
+257 silly audit   lodash: [ '4.17.21' ],
+257 silly audit   'lodash.merge': [ '4.6.2' ],
+257 silly audit   'loose-envify': [ '1.4.0' ],
+257 silly audit   'lru-cache': [ '10.4.3' ],
+257 silly audit   'lucide-react': [ '0.487.0' ],
+257 silly audit   'magic-string': [ '0.30.21' ],
+257 silly audit   'math-intrinsics': [ '1.1.0' ],
+257 silly audit   minimist: [ '1.2.8' ],
+257 silly audit   minipass: [ '7.1.2' ],
+257 silly audit   motion: [ '11.18.2' ],
+257 silly audit   'motion-dom': [ '11.18.1' ],
+257 silly audit   'motion-utils': [ '11.18.1' ],
+257 silly audit   ms: [ '2.1.3' ],
+257 silly audit   nanoid: [ '3.3.11' ],
+257 silly audit   'napi-postinstall': [ '0.3.4' ],
+257 silly audit   'natural-compare': [ '1.4.0' ],
+257 silly audit   'next-themes': [ '0.4.6' ],
+257 silly audit   postcss: [ '8.5.6', '8.4.31' ],
+257 silly audit   'object-assign': [ '4.1.1' ],
+257 silly audit   'object-inspect': [ '1.13.4' ],
+257 silly audit   'object-keys': [ '1.1.1' ],
+257 silly audit   'object.assign': [ '4.1.7' ],
+257 silly audit   'object.entries': [ '1.1.9' ],
+257 silly audit   'object.fromentries': [ '2.0.8' ],
+257 silly audit   'object.groupby': [ '1.0.3' ],
+257 silly audit   'object.values': [ '1.2.1' ],
+257 silly audit   once: [ '1.4.0' ],
+257 silly audit   optionator: [ '0.9.4' ],
+257 silly audit   'own-keys': [ '1.0.1' ],
+257 silly audit   'p-limit': [ '3.1.0' ],
+257 silly audit   'p-locate': [ '5.0.0' ],
+257 silly audit   'parent-module': [ '1.0.1' ],
+257 silly audit   'path-exists': [ '4.0.0' ],
+257 silly audit   'path-is-absolute': [ '1.0.1' ],
+257 silly audit   'path-key': [ '3.1.1' ],
+257 silly audit   'path-parse': [ '1.0.7' ],
+257 silly audit   'path-scurry': [ '1.11.1' ],
+257 silly audit   picocolors: [ '1.1.1' ],
+257 silly audit   picomatch: [ '4.0.3' ],
+257 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+257 silly audit   'prelude-ls': [ '1.2.1' ],
+257 silly audit   'prop-types': [ '15.8.1' ],
+257 silly audit   punycode: [ '2.3.1' ],
+257 silly audit   'queue-microtask': [ '1.2.3' ],
+257 silly audit   react: [ '18.3.1' ],
+257 silly audit   'react-day-picker': [ '8.10.1' ],
+257 silly audit   'react-dom': [ '18.3.1' ],
+257 silly audit   'react-hook-form': [ '7.69.0' ],
+257 silly audit   'react-is': [ '16.13.1', '18.3.1' ],
+257 silly audit   'react-remove-scroll': [ '2.7.2' ],
+257 silly audit   'react-remove-scroll-bar': [ '2.3.8' ],
+257 silly audit   'react-resizable-panels': [ '2.1.9' ],
+257 silly audit   'react-smooth': [ '4.0.4' ],
+257 silly audit   'react-style-singleton': [ '2.2.3' ],
+257 silly audit   'react-transition-group': [ '4.4.5' ],
+257 silly audit   recharts: [ '2.15.4' ],
+257 silly audit   'recharts-scale': [ '0.4.5' ],
+257 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+257 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+257 silly audit   'resolve-from': [ '4.0.0' ],
+257 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+257 silly audit   reusify: [ '1.1.0' ],
+257 silly audit   rimraf: [ '3.0.2' ],
+257 silly audit   'run-parallel': [ '1.2.0' ],
+257 silly audit   'safe-array-concat': [ '1.1.3' ],
+257 silly audit   'safe-push-apply': [ '1.0.0' ],
+257 silly audit   'safe-regex-test': [ '1.1.0' ],
+257 silly audit   scheduler: [ '0.23.2' ],
+257 silly audit   'set-function-length': [ '1.2.2' ],
+257 silly audit   'set-function-name': [ '2.0.2' ],
+257 silly audit   'set-proto': [ '1.0.0' ],
+257 silly audit   'shebang-command': [ '2.0.0' ],
+257 silly audit   'shebang-regex': [ '3.0.0' ],
+257 silly audit   'side-channel': [ '1.1.0' ],
+257 silly audit   'side-channel-list': [ '1.0.0' ],
+257 silly audit   'side-channel-map': [ '1.0.1' ],
+257 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+257 silly audit   'signal-exit': [ '4.1.0' ],
+257 silly audit   sonner: [ '2.0.7' ],
+257 silly audit   'source-map-js': [ '1.2.1' ],
+257 silly audit   'stable-hash': [ '0.0.5' ],
+257 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+257 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+257 silly audit   'string.prototype.includes': [ '2.0.1' ],
+257 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+257 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+257 silly audit   'string.prototype.trim': [ '1.2.10' ],
+257 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+257 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+257 silly audit   'strip-bom': [ '3.0.0' ],
+257 silly audit   'strip-json-comments': [ '3.1.1' ],
+257 silly audit   'supports-color': [ '7.2.0' ],
+257 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+257 silly audit   'tailwind-merge': [ '2.6.0' ],
+257 silly audit   tailwindcss: [ '4.1.18' ],
+257 silly audit   tapable: [ '2.3.0' ],
+257 silly audit   'text-table': [ '0.2.0' ],
+257 silly audit   'tiny-invariant': [ '1.3.3' ],
+257 silly audit   tinyglobby: [ '0.2.15' ],
+257 silly audit   'ts-api-utils': [ '2.1.0' ],
+257 silly audit   'tsconfig-paths': [ '3.15.0' ],
+257 silly audit   tslib: [ '2.8.1' ],
+257 silly audit   'type-check': [ '0.4.0' ],
+257 silly audit   'type-fest': [ '0.20.2' ],
+257 silly audit   'typed-array-buffer': [ '1.0.3' ],
+257 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+257 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+257 silly audit   'typed-array-length': [ '1.0.7' ],
+257 silly audit   typescript: [ '5.9.3' ],
+257 silly audit   'unbox-primitive': [ '1.1.0' ],
+257 silly audit   'undici-types': [ '6.21.0' ],
+257 silly audit   'unrs-resolver': [ '1.11.1' ],
+257 silly audit   'uri-js': [ '4.4.1' ],
+257 silly audit   'use-callback-ref': [ '1.3.3' ],
+257 silly audit   'use-sidecar': [ '1.1.3' ],
+257 silly audit   'use-sync-external-store': [ '1.6.0' ],
+257 silly audit   vaul: [ '1.1.2' ],
+257 silly audit   'victory-vendor': [ '36.9.2' ],
+257 silly audit   which: [ '2.0.2' ],
+257 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+257 silly audit   'which-builtin-type': [ '1.2.1' ],
+257 silly audit   'which-collection': [ '1.0.2' ],
+257 silly audit   'which-typed-array': [ '1.1.19' ],
+257 silly audit   'word-wrap': [ '1.2.5' ],
+257 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+257 silly audit   wrappy: [ '1.0.2' ],
+257 silly audit   'yocto-queue': [ '0.1.0' ],
+257 silly audit   zod: [ '3.25.76' ],
+257 silly audit   next: [ '16.1.1' ],
+257 silly audit   '@next/env': [ '16.1.1' ],
+257 silly audit   '@next/swc-darwin-arm64': [ '16.1.1' ],
+257 silly audit   '@next/swc-darwin-x64': [ '16.1.1' ],
+257 silly audit   '@next/swc-linux-arm64-gnu': [ '16.1.1' ],
+257 silly audit   '@next/swc-linux-arm64-musl': [ '16.1.1' ],
+257 silly audit   '@next/swc-linux-x64-gnu': [ '16.1.1' ],
+257 silly audit   '@next/swc-linux-x64-musl': [ '16.1.1' ],
+257 silly audit   '@next/swc-win32-arm64-msvc': [ '16.1.1' ],
+257 silly audit   '@next/swc-win32-x64-msvc': [ '16.1.1' ],
+257 silly audit   '@swc/helpers': [ '0.5.15' ],
+257 silly audit   'baseline-browser-mapping': [ '2.9.11' ],
+257 silly audit   sharp: [ '0.34.5' ],
+257 silly audit   'styled-jsx': [ '5.1.6' ],
+257 silly audit   '@img/colour': [ '1.0.0' ],
+257 silly audit   '@img/sharp-darwin-arm64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-darwin-x64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linux-arm': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linux-x64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.2.4' ],
+257 silly audit   '@img/sharp-linux-arm': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linux-arm64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linux-ppc64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linux-riscv64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linux-s390x': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linux-x64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-linuxmusl-x64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-wasm32': [ '0.34.5' ],
+257 silly audit   '@img/sharp-win32-arm64': [ '0.34.5' ],
+257 silly audit   '@img/sharp-win32-ia32': [ '0.34.5' ],
+257 silly audit   '@img/sharp-win32-x64': [ '0.34.5' ],
+257 silly audit   'client-only': [ '0.0.1' ],
+257 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.1.18' ]
+257 silly audit }
+258 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-win32-x64
+259 silly reify mark deleted [
+259 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-win32-x64'
+259 silly reify ]
+260 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-win32-ia32
+261 silly reify mark deleted [
+261 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-win32-ia32'
+261 silly reify ]
+262 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-win32-arm64
+263 silly reify mark deleted [
+263 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-win32-arm64'
+263 silly reify ]
+264 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-wasm32
+265 silly reify mark deleted [
+265 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-wasm32'
+265 silly reify ]
+266 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linuxmusl-x64
+267 silly reify mark deleted [
+267 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linuxmusl-x64'
+267 silly reify ]
+268 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linuxmusl-arm64
+269 silly reify mark deleted [
+269 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linuxmusl-arm64'
+269 silly reify ]
+270 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-x64
+271 silly reify mark deleted [
+271 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-x64'
+271 silly reify ]
+272 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-s390x
+273 silly reify mark deleted [
+273 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-s390x'
+273 silly reify ]
+274 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-riscv64
+275 silly reify mark deleted [
+275 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-riscv64'
+275 silly reify ]
+276 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-ppc64
+277 silly reify mark deleted [
+277 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-ppc64'
+277 silly reify ]
+278 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-arm64
+279 silly reify mark deleted [
+279 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-arm64'
+279 silly reify ]
+280 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-arm
+281 silly reify mark deleted [
+281 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-linux-arm'
+281 silly reify ]
+282 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linuxmusl-x64
+283 silly reify mark deleted [
+283 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linuxmusl-x64'
+283 silly reify ]
+284 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linuxmusl-arm64
+285 silly reify mark deleted [
+285 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linuxmusl-arm64'
+285 silly reify ]
+286 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-x64
+287 silly reify mark deleted [
+287 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-x64'
+287 silly reify ]
+288 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-s390x
+289 silly reify mark deleted [
+289 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-s390x'
+289 silly reify ]
+290 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-riscv64
+291 silly reify mark deleted [
+291 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-riscv64'
+291 silly reify ]
+292 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-ppc64
+293 silly reify mark deleted [
+293 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-ppc64'
+293 silly reify ]
+294 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-arm64
+295 silly reify mark deleted [
+295 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-arm64'
+295 silly reify ]
+296 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-arm
+297 silly reify mark deleted [
+297 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-linux-arm'
+297 silly reify ]
+298 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-darwin-x64
+299 silly reify mark deleted [
+299 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-libvips-darwin-x64'
+299 silly reify ]
+300 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-darwin-x64
+301 silly reify mark deleted [
+301 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@img/sharp-darwin-x64'
+301 silly reify ]
+302 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-win32-x64-msvc
+303 silly reify mark deleted [
+303 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-win32-x64-msvc'
+303 silly reify ]
+304 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-win32-arm64-msvc
+305 silly reify mark deleted [
+305 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-win32-arm64-msvc'
+305 silly reify ]
+306 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-x64-musl
+307 silly reify mark deleted [
+307 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-x64-musl'
+307 silly reify ]
+308 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-x64-gnu
+309 silly reify mark deleted [
+309 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-x64-gnu'
+309 silly reify ]
+310 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-arm64-musl
+311 silly reify mark deleted [
+311 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-arm64-musl'
+311 silly reify ]
+312 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-arm64-gnu
+313 silly reify mark deleted [
+313 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-linux-arm64-gnu'
+313 silly reify ]
+314 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-darwin-x64
+315 silly reify mark deleted [
+315 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@next/swc-darwin-x64'
+315 silly reify ]
+316 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-win32-x64-msvc
+317 silly reify mark deleted [
+317 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-win32-x64-msvc'
+317 silly reify ]
+318 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-win32-arm64-msvc
+319 silly reify mark deleted [
+319 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-win32-arm64-msvc'
+319 silly reify ]
+320 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-x64-musl
+321 silly reify mark deleted [
+321 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-x64-musl'
+321 silly reify ]
+322 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-x64-gnu
+323 silly reify mark deleted [
+323 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-x64-gnu'
+323 silly reify ]
+324 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-arm64-musl
+325 silly reify mark deleted [
+325 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-arm64-musl'
+325 silly reify ]
+326 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-arm64-gnu
+327 silly reify mark deleted [
+327 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-arm64-gnu'
+327 silly reify ]
+328 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-arm-gnueabihf
+329 silly reify mark deleted [
+329 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-linux-arm-gnueabihf'
+329 silly reify ]
+330 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-freebsd-x64
+331 silly reify mark deleted [
+331 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-freebsd-x64'
+331 silly reify ]
+332 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-darwin-x64
+333 silly reify mark deleted [
+333 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-darwin-x64'
+333 silly reify ]
+334 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-android-arm64
+335 silly reify mark deleted [
+335 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/lightningcss-android-arm64'
+335 silly reify ]
+336 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-win32-x64-msvc
+337 silly reify mark deleted [
+337 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-win32-x64-msvc'
+337 silly reify ]
+338 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-win32-ia32-msvc
+339 silly reify mark deleted [
+339 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-win32-ia32-msvc'
+339 silly reify ]
+340 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-win32-arm64-msvc
+341 silly reify mark deleted [
+341 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-win32-arm64-msvc'
+341 silly reify ]
+342 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-wasm32-wasi
+343 silly reify mark deleted [
+343 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-wasm32-wasi'
+343 silly reify ]
+344 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-x64-musl
+345 silly reify mark deleted [
+345 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-x64-musl'
+345 silly reify ]
+346 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-x64-gnu
+347 silly reify mark deleted [
+347 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-x64-gnu'
+347 silly reify ]
+348 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-s390x-gnu
+349 silly reify mark deleted [
+349 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-s390x-gnu'
+349 silly reify ]
+350 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-riscv64-musl
+351 silly reify mark deleted [
+351 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-riscv64-musl'
+351 silly reify ]
+352 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-riscv64-gnu
+353 silly reify mark deleted [
+353 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-riscv64-gnu'
+353 silly reify ]
+354 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-ppc64-gnu
+355 silly reify mark deleted [
+355 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-ppc64-gnu'
+355 silly reify ]
+356 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm64-musl
+357 silly reify mark deleted [
+357 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm64-musl'
+357 silly reify ]
+358 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm64-gnu
+359 silly reify mark deleted [
+359 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm64-gnu'
+359 silly reify ]
+360 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm-musleabihf
+361 silly reify mark deleted [
+361 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm-musleabihf'
+361 silly reify ]
+362 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm-gnueabihf
+363 silly reify mark deleted [
+363 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-linux-arm-gnueabihf'
+363 silly reify ]
+364 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-freebsd-x64
+365 silly reify mark deleted [
+365 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-freebsd-x64'
+365 silly reify ]
+366 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-darwin-x64
+367 silly reify mark deleted [
+367 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-darwin-x64'
+367 silly reify ]
+368 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-android-arm64
+369 silly reify mark deleted [
+369 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-android-arm64'
+369 silly reify ]
+370 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-android-arm-eabi
+371 silly reify mark deleted [
+371 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@unrs/resolver-binding-android-arm-eabi'
+371 silly reify ]
+372 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-win32-x64-msvc
+373 silly reify mark deleted [
+373 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-win32-x64-msvc'
+373 silly reify ]
+374 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-win32-arm64-msvc
+375 silly reify mark deleted [
+375 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-win32-arm64-msvc'
+375 silly reify ]
+376 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-x64-musl
+377 silly reify mark deleted [
+377 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-x64-musl'
+377 silly reify ]
+378 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-x64-gnu
+379 silly reify mark deleted [
+379 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-x64-gnu'
+379 silly reify ]
+380 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-arm64-musl
+381 silly reify mark deleted [
+381 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-arm64-musl'
+381 silly reify ]
+382 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-arm64-gnu
+383 silly reify mark deleted [
+383 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-arm64-gnu'
+383 silly reify ]
+384 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf
+385 silly reify mark deleted [
+385 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf'
+385 silly reify ]
+386 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-freebsd-x64
+387 silly reify mark deleted [
+387 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-freebsd-x64'
+387 silly reify ]
+388 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-darwin-x64
+389 silly reify mark deleted [
+389 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-darwin-x64'
+389 silly reify ]
+390 verbose reify failed optional dependency /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-android-arm64
+391 silly reify mark deleted [
+391 silly reify   '/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/node_modules/@tailwindcss/oxide-android-arm64'
+391 silly reify ]
+392 silly tarball no local data for @img/sharp-libvips-darwin-arm64@https://registry.npmjs.org/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.2.4.tgz. Extracting by manifest.
+393 silly tarball no local data for @img/sharp-darwin-arm64@https://registry.npmjs.org/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.34.5.tgz. Extracting by manifest.
+394 silly tarball no local data for @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.0.0.tgz. Extracting by manifest.
+395 silly tarball no local data for styled-jsx@https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz. Extracting by manifest.
+396 silly tarball no local data for baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.9.11.tgz. Extracting by manifest.
+397 silly tarball no local data for @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz. Extracting by manifest.
+398 silly tarball no local data for next@https://registry.npmjs.org/next/-/next-16.1.1.tgz. Extracting by manifest.
+399 silly tarball no local data for @next/swc-darwin-arm64@https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-16.1.1.tgz. Extracting by manifest.
+400 silly tarball no local data for @next/env@https://registry.npmjs.org/@next/env/-/env-16.1.1.tgz. Extracting by manifest.
+401 silly tarball no local data for sharp@https://registry.npmjs.org/sharp/-/sharp-0.34.5.tgz. Extracting by manifest.
+402 http fetch GET 200 https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.9.11.tgz 52ms (cache miss)
+403 http fetch GET 200 https://registry.npmjs.org/@img/colour/-/colour-1.0.0.tgz 70ms (cache miss)
+404 http fetch GET 200 https://registry.npmjs.org/@next/env/-/env-16.1.1.tgz 78ms (cache miss)
+405 http fetch GET 200 https://registry.npmjs.org/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.34.5.tgz 88ms (cache miss)
+406 http fetch GET 200 https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz 89ms (cache miss)
+407 http fetch GET 200 https://registry.npmjs.org/sharp/-/sharp-0.34.5.tgz 104ms (cache miss)
+408 http fetch GET 200 https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz 147ms (cache miss)
+409 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 302ms
+410 silly audit report {
+410 silly audit report   glob: [
+410 silly audit report     {
+410 silly audit report       id: 1109842,
+410 silly audit report       url: 'https://github.com/advisories/GHSA-5j98-mcp5-4vw2',
+410 silly audit report       title: 'glob CLI: Command injection via -c/--cmd executes matches with shell:true',
+410 silly audit report       severity: 'high',
+410 silly audit report       vulnerable_versions: '>=10.2.0 <10.5.0',
+410 silly audit report       cwe: [Array],
+410 silly audit report       cvss: [Object]
+410 silly audit report     }
+410 silly audit report   ]
+410 silly audit report }
+411 silly packumentCache corgi:https://registry.npmjs.org/glob cache-miss
+412 http fetch GET 200 https://registry.npmjs.org/glob 2ms (cache hit)
+413 silly packumentCache corgi:https://registry.npmjs.org/glob set size:159574 disposed:false
+414 silly packumentCache corgi:https://registry.npmjs.org/@next%2feslint-plugin-next cache-miss
+415 http fetch GET 200 https://registry.npmjs.org/@next%2feslint-plugin-next 3ms (cache hit)
+416 silly packumentCache corgi:https://registry.npmjs.org/@next%2feslint-plugin-next set size:3022476 disposed:false
+417 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next cache-miss
+418 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 5ms (cache hit)
+419 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next set size:3579521 disposed:false
+420 http fetch GET 200 https://registry.npmjs.org/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.2.4.tgz 2226ms (cache miss)
+421 http fetch GET 200 https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-16.1.1.tgz 5408ms (cache miss)
+422 http fetch GET 200 https://registry.npmjs.org/next/-/next-16.1.1.tgz 6104ms (cache miss)
+423 info run sharp@0.34.5 install node_modules/sharp node install/check.js || npm run build
+424 info run sharp@0.34.5 install { code: 0, signal: null }
+425 silly ADD
+426 silly ADD
+427 silly ADD
+428 silly ADD
+429 silly ADD
+430 silly ADD
+431 silly ADD
+432 silly ADD
+433 silly ADD
+434 silly ADD
+435 silly ADD
+436 silly ADD
+437 silly ADD
+438 silly ADD
+439 silly ADD
+440 silly ADD
+441 silly ADD
+442 silly ADD
+443 silly ADD
+444 silly ADD
+445 silly ADD
+446 silly ADD node_modules/@img/sharp-libvips-darwin-arm64
+447 silly ADD
+448 silly ADD node_modules/@img/sharp-darwin-arm64
+449 silly ADD node_modules/@img/colour
+450 silly ADD node_modules/sharp
+451 silly ADD node_modules/baseline-browser-mapping
+452 silly ADD
+453 silly ADD
+454 silly ADD
+455 silly ADD
+456 silly ADD
+457 silly ADD
+458 silly ADD
+459 silly ADD
+460 silly ADD
+461 silly ADD
+462 silly ADD
+463 silly ADD
+464 silly ADD
+465 silly ADD
+466 silly ADD
+467 silly ADD
+468 silly ADD
+469 silly ADD
+470 silly ADD
+471 silly ADD
+472 silly ADD
+473 silly ADD
+474 silly ADD
+475 silly ADD
+476 silly ADD
+477 silly ADD
+478 silly ADD
+479 silly ADD
+480 silly ADD
+481 silly ADD
+482 silly ADD
+483 silly ADD
+484 silly ADD
+485 silly ADD
+486 silly ADD
+487 silly ADD
+488 silly ADD
+489 silly ADD
+490 silly ADD
+491 silly ADD
+492 silly ADD
+493 silly ADD
+494 silly ADD
+495 silly ADD
+496 silly ADD
+497 silly ADD
+498 silly CHANGE node_modules/styled-jsx
+499 silly REMOVE node_modules/streamsearch
+500 silly CHANGE node_modules/next
+501 silly REMOVE node_modules/busboy
+502 silly CHANGE node_modules/@swc/helpers
+503 silly REMOVE node_modules/@swc/counter
+504 silly CHANGE node_modules/@next/swc-darwin-arm64
+505 silly CHANGE node_modules/@next/env
+506 verbose cwd /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)
+507 verbose os Darwin 24.6.0
+508 verbose node v18.20.7
+509 verbose npm  v10.8.2
+510 verbose exit 0
+511 info ok

@@ -1,0 +1,19 @@
+0 verbose cli /Users/nicolassanpedro/.nvm/versions/node/v18.20.7/bin/node /Users/nicolassanpedro/.nvm/versions/node/v18.20.7/bin/npm
+1 info using npm@10.8.2
+2 info using node@v18.20.7
+3 silly config load:file:/Users/nicolassanpedro/.nvm/versions/node/v18.20.7/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/.npmrc
+5 silly config load:file:/Users/nicolassanpedro/.npmrc
+6 silly config load:file:/Users/nicolassanpedro/.nvm/versions/node/v18.20.7/etc/npmrc
+7 verbose title npm view next versions
+8 verbose argv "view" "next" "versions" "--json"
+9 verbose logfile logs-max:10 dir:/Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/npm-cache/_logs/2025-12-23T10_36_53_724Z-
+10 verbose logfile /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)/npm-cache/_logs/2025-12-23T10_36_53_724Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/next 141ms (cache revalidated)
+13 verbose cwd /Users/nicolassanpedro/Downloads/WorkSense SaaS Dashboard Design (1)
+14 verbose os Darwin 24.6.0
+15 verbose node v18.20.7
+16 verbose npm  v10.8.2
+17 verbose exit 0
+18 info ok
