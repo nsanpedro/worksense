@@ -1,133 +1,55 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
 import { getCurrentUser } from '@/lib/auth'
 
-// GET - Obtener survey por ID
+// Datos de demo para un survey específico
+const DEMO_SURVEY_DETAIL = {
+  id: 'survey-001',
+  title: 'October 2025 Team Alignment Survey',
+  description: 'Monthly survey to measure team alignment and identify friction points',
+  status: 'COMPLETED',
+  deadline: '2025-10-31',
+  createdAt: '2025-10-01',
+  questions: [
+    { id: 'q1', text: 'How aligned do you feel with the team\'s current priorities?', type: 'SCALE', targetRole: null },
+    { id: 'q2', text: 'What is the biggest friction point in your daily work?', type: 'TEXT', targetRole: null },
+    { id: 'q3', text: 'How clear are the sprint objectives?', type: 'SCALE', targetRole: 'PM' },
+    { id: 'q4', text: 'Rate the effectiveness of cross-team communication', type: 'SCALE', targetRole: 'EM' },
+  ],
+  responseCount: 24,
+  totalParticipants: 28,
+}
+
+// GET - Obtener survey por ID (datos de demo)
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: { id: string } }
 ) {
   try {
-    const { id } = await params
     const user = await getCurrentUser(request)
-    
     if (!user) {
       return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
     }
 
-    const survey = await prisma.survey.findFirst({
-      where: { 
-        id,
-        organizationId: user.organizationId 
-      },
-      include: {
-        team: true,
-        questions: { orderBy: { order: 'asc' } },
-        responses: {
-          include: {
-            user: {
-              select: { id: true, name: true, role: true, email: true }
-            },
-            answers: {
-              include: {
-                question: true
-              }
-            }
-          }
-        },
-        insights: {
-          include: {
-            actions: true
-          },
-          orderBy: { createdAt: 'desc' }
-        }
-      }
-    })
-
-    if (!survey) {
-      return NextResponse.json({ error: 'Survey no encontrado' }, { status: 404 })
-    }
-
-    return NextResponse.json({ survey })
+    // Retornar survey de demo
+    return NextResponse.json({ survey: { ...DEMO_SURVEY_DETAIL, id: params.id } })
   } catch (error) {
     console.error('Get survey error:', error)
     return NextResponse.json({ error: 'Error al obtener survey' }, { status: 500 })
   }
 }
 
-// PUT - Actualizar survey
-export async function PUT(
-  request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
-) {
-  try {
-    const { id } = await params
-    const user = await getCurrentUser(request)
-    
-    if (!user) {
-      return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
-    }
-
-    const body = await request.json()
-    const { title, description, status, deadline } = body
-
-    // Verificar que el survey pertenece a la organización
-    const existingSurvey = await prisma.survey.findFirst({
-      where: { id, organizationId: user.organizationId }
-    })
-
-    if (!existingSurvey) {
-      return NextResponse.json({ error: 'Survey no encontrado' }, { status: 404 })
-    }
-
-    const survey = await prisma.survey.update({
-      where: { id },
-      data: {
-        ...(title && { title }),
-        ...(description !== undefined && { description }),
-        ...(status && { status }),
-        ...(deadline !== undefined && { deadline: deadline ? new Date(deadline) : null }),
-      },
-      include: {
-        questions: { orderBy: { order: 'asc' } },
-        team: true
-      }
-    })
-
-    return NextResponse.json({ survey })
-  } catch (error) {
-    console.error('Update survey error:', error)
-    return NextResponse.json({ error: 'Error al actualizar survey' }, { status: 500 })
-  }
+// PUT - Actualizar survey (deshabilitado en demo)
+export async function PUT(request: NextRequest) {
+  return NextResponse.json(
+    { error: 'Actualizar surveys está deshabilitado en modo demo' },
+    { status: 400 }
+  )
 }
 
-// DELETE - Eliminar survey
-export async function DELETE(
-  request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
-) {
-  try {
-    const { id } = await params
-    const user = await getCurrentUser(request)
-    
-    if (!user) {
-      return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
-    }
-
-    // Verificar que el survey pertenece a la organización
-    const existingSurvey = await prisma.survey.findFirst({
-      where: { id, organizationId: user.organizationId }
-    })
-
-    if (!existingSurvey) {
-      return NextResponse.json({ error: 'Survey no encontrado' }, { status: 404 })
-    }
-
-    await prisma.survey.delete({ where: { id } })
-
-    return NextResponse.json({ success: true })
-  } catch (error) {
-    console.error('Delete survey error:', error)
-    return NextResponse.json({ error: 'Error al eliminar survey' }, { status: 500 })
-  }
+// DELETE - Eliminar survey (deshabilitado en demo)
+export async function DELETE(request: NextRequest) {
+  return NextResponse.json(
+    { error: 'Eliminar surveys está deshabilitado en modo demo' },
+    { status: 400 }
+  )
 }

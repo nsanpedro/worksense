@@ -1,69 +1,37 @@
-import { getCurrentUser } from '@/lib/auth';
-import { prisma } from '@/lib/prisma';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server'
+import { getCurrentUser } from '@/lib/auth'
+import { DEMO_TEAM, DEMO_USERS } from '@/lib/demo-data'
 
-// GET - Listar teams de la organización
+// GET - Listar teams (datos de demo)
 export async function GET(request: NextRequest) {
   try {
-    const user = await getCurrentUser(request);
+    const user = await getCurrentUser(request)
     if (!user) {
-      return NextResponse.json({ error: 'No autenticado' }, { status: 401 });
+      return NextResponse.json({ error: 'No autenticado' }, { status: 401 })
     }
 
-    const teams = await prisma.team.findMany({
-      where: { organizationId: user.organizationId },
-      include: {
-        members: {
-          select: { id: true, name: true, email: true, role: true },
-        },
-        _count: {
-          select: { surveys: true, members: true },
-        },
-      },
-      orderBy: { name: 'asc' },
-    });
+    // Retornar team de demo con miembros
+    const teams = [{
+      ...DEMO_TEAM,
+      members: DEMO_USERS.map(u => ({
+        id: u.id,
+        name: u.name,
+        email: u.email,
+        role: u.role,
+      }))
+    }]
 
-    return NextResponse.json({ teams });
+    return NextResponse.json({ teams })
   } catch (error) {
-    console.error('Get teams error:', error);
-    return NextResponse.json(
-      { error: 'Error al obtener teams' },
-      { status: 500 }
-    );
+    console.error('Get teams error:', error)
+    return NextResponse.json({ error: 'Error al obtener teams' }, { status: 500 })
   }
 }
 
-// POST - Crear nuevo team
+// POST - Crear team (deshabilitado en demo)
 export async function POST(request: NextRequest) {
-  try {
-    const user = await getCurrentUser(request);
-    if (!user) {
-      return NextResponse.json({ error: 'No autenticado' }, { status: 401 });
-    }
-
-    const body = await request.json();
-    const { name } = body;
-
-    if (!name) {
-      return NextResponse.json(
-        { error: 'El nombre es requerido' },
-        { status: 400 }
-      );
-    }
-
-    const team = await prisma.team.create({
-      data: {
-        name,
-        organizationId: user.organizationId,
-      },
-      include: {
-        members: true,
-      },
-    });
-
-    return NextResponse.json({ team }, { status: 201 });
-  } catch (error) {
-    console.error('Create team error:', error);
-    return NextResponse.json({ error: 'Error al crear team' }, { status: 500 });
-  }
+  return NextResponse.json(
+    { error: 'Crear teams está deshabilitado en modo demo' },
+    { status: 400 }
+  )
 }
