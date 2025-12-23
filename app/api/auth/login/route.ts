@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
-import { verifyPassword, generateToken } from '@/lib/auth'
+import { generateToken } from '@/lib/auth'
+import { findDemoUserByEmail, verifyDemoPassword } from '@/lib/demo-data'
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,14 +14,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Buscar usuario
-    const user = await prisma.user.findUnique({
-      where: { email },
-      include: {
-        organization: true,
-        team: true,
-      }
-    })
+    // Buscar usuario en datos de demo
+    const user = findDemoUserByEmail(email)
 
     if (!user) {
       return NextResponse.json(
@@ -31,7 +25,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Verificar password
-    const isValid = await verifyPassword(password, user.password)
+    const isValid = verifyDemoPassword(password, user)
     if (!isValid) {
       return NextResponse.json(
         { error: 'Credenciales inválidas' },
